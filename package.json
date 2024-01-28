@@ -1,0 +1,41 @@
+{
+  "name": "meteor",
+  "version": "0.0.1",
+  "description": "Used to apply Prettier and ESLint manually",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meteor/meteor.git"
+  },
+  "author": "Filipe Névola",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meteor/meteor/issues"
+  },
+  "homepage": "https://github.com/meteor/meteor#readme",
+  "devDependencies": {
+    "@quave/eslint-config-quave": "^1.0.7",
+    "@types/node": "^14.18.63"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@quave/quave"
+    ],
+    "rules": {
+      "global-require": "off",
+      "no-console": "off",
+      "camelcase": "warn",
+      "consistent-return": "off",
+      "quotes": "warn",
+      "no-shadow": [
+        "error",
+        {
+          "allow": [
+            "resolve"
+          ]
+        }
+      ],
+      "no-use-before-define": "warn",
+      "import/no-unresolved": "warn"
+    }
+  }
+}
